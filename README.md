@@ -49,7 +49,7 @@ SJNetwork provides a high level network request API  based on AFNetworking and i
 
 
 
-**Using Pod**:
+**Using Cocoapods**:
 
 ``pod 'SJNetwork'``
 
