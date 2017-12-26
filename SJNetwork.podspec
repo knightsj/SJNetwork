@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "SJNetwork"
-  s.version      = "1.0.4"
+  s.version      = "1.0.0"
   s.summary      = "SJNetwork is a high level network request tool based on AFNetworking."
   s.homepage     = "https://github.com/knightsj/SJNetwork"
   s.license      = "MIT"
