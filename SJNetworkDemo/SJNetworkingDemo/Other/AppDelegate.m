@@ -17,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
     
     
@@ -25,9 +26,7 @@
                                                          @"platform":@"iOS"};
     
     [[SJNetworkConfig sharedConfig] addCustomHeader:@{@"token":@"2j4jd9s74bfm9sn3"}];
-    
-    
-    [[SJNetworkManager sharedManager] addCustomHeader:@{@"token":@"2j4jd9s74bfm9sn3"}];
+//    [[SJNetworkManager sharedManager] addCustomHeader:@{@"token":@"2j4jd9s74bfm9sn3"}];
     
     return YES;
 }
