@@ -266,7 +266,7 @@ Clearing cache of network requests which share the same request url and method:
 
 #### Calculating Cache
 
-Calculating the size of file folder:
+Calculating the size of cache folder:
 
 ```objective-c
 [[SJNetworkManager sharedManager] calculateCacheSizeWithCompletionBlock:^(NSUInteger fileCount, NSUInteger totalSize, NSString *totalSizeString) {
