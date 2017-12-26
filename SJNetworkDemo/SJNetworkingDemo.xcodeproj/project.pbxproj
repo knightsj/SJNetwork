@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C612A51EBEC32C107815BAB /* libPods-SJNetworkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A57F5D2046E8373B41EF067 /* libPods-SJNetworkingDemo.a */; };
+		CB73266F1FF2C91F002E2ACD /* SJNetworkCacheInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7326551FF2C91F002E2ACD /* SJNetworkCacheInfo.m */; };
+		CB7326701FF2C91F002E2ACD /* SJNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7326581FF2C91F002E2ACD /* SJNetworkManager.m */; };
+		CB7326711FF2C91F002E2ACD /* SJNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7326591FF2C91F002E2ACD /* SJNetworkConfig.m */; };
+		CB7326721FF2C91F002E2ACD /* SJNetworkDownloadResumeDataInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73265A1FF2C91F002E2ACD /* SJNetworkDownloadResumeDataInfo.m */; };
+		CB7326731FF2C91F002E2ACD /* SJNetworkDownloadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73265B1FF2C91F002E2ACD /* SJNetworkDownloadEngine.m */; };
+		CB7326741FF2C91F002E2ACD /* SJNetworkCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73265C1FF2C91F002E2ACD /* SJNetworkCacheManager.m */; };
+		CB7326751FF2C91F002E2ACD /* SJNetworkRequestPool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73265D1FF2C91F002E2ACD /* SJNetworkRequestPool.m */; };
+		CB7326761FF2C91F002E2ACD /* SJNetworkUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73265E1FF2C91F002E2ACD /* SJNetworkUtils.m */; };
+		CB7326771FF2C91F002E2ACD /* SJNetworkBaseEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73265F1FF2C91F002E2ACD /* SJNetworkBaseEngine.m */; };
+		CB7326781FF2C91F002E2ACD /* SJNetworkUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7326601FF2C91F002E2ACD /* SJNetworkUploadEngine.m */; };
+		CB7326791FF2C91F002E2ACD /* SJNetworkRequestEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7326641FF2C91F002E2ACD /* SJNetworkRequestEngine.m */; };
+		CB73267A1FF2C91F002E2ACD /* SJNetworkRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7326661FF2C91F002E2ACD /* SJNetworkRequestModel.m */; };
+		CB9B897F1FC7226A00C4522C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B897E1FC7226A00C4522C /* AppDelegate.m */; };
+		CB9B89851FC7226A00C4522C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89831FC7226A00C4522C /* Main.storyboard */; };
+		CB9B89871FC7226A00C4522C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89861FC7226A00C4522C /* Assets.xcassets */; };
+		CB9B898A1FC7226A00C4522C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89881FC7226A00C4522C /* LaunchScreen.storyboard */; };
+		CB9B898D1FC7226A00C4522C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B898C1FC7226A00C4522C /* main.m */; };
+		CB9B89971FC7226A00C4522C /* SJNetworkingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B89961FC7226A00C4522C /* SJNetworkingDemoTests.m */; };
+		CB9B89A21FC7226A00C4522C /* SJNetworkingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B89A11FC7226A00C4522C /* SJNetworkingDemoUITests.m */; };
+		CB9B89B61FC7234300C4522C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B89B11FC7234300C4522C /* ViewController.m */; };
+		CB9B89B71FC7234300C4522C /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B89B31FC7234300C4522C /* DownLoadViewController.m */; };
+		CB9B89B81FC7234300C4522C /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9B89B41FC7234300C4522C /* UploadViewController.m */; };
+		CB9B89BF1FC7234B00C4522C /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89BA1FC7234B00C4522C /* image_2.jpg */; };
+		CB9B89C01FC7234B00C4522C /* image_3.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89BB1FC7234B00C4522C /* image_3.png */; };
+		CB9B89C11FC7234B00C4522C /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89BC1FC7234B00C4522C /* image_1.jpg */; };
+		CB9B89C21FC7234B00C4522C /* image_4.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89BD1FC7234B00C4522C /* image_4.png */; };
+		CB9B89C31FC7234B00C4522C /* image_5.png in Resources */ = {isa = PBXBuildFile; fileRef = CB9B89BE1FC7234B00C4522C /* image_5.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB9B89931FC7226A00C4522C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9B89721FC7226A00C4522C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9B89791FC7226A00C4522C;
+			remoteInfo = SJNetworkingDemo;
+		};
+		CB9B899E1FC7226A00C4522C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9B89721FC7226A00C4522C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9B89791FC7226A00C4522C;
+			remoteInfo = SJNetworkingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A57F5D2046E8373B41EF067 /* libPods-SJNetworkingDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SJNetworkingDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD1551EFC2D5DD53F3B32C6 /* Pods-SJNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SJNetworkingDemo/Pods-SJNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CB7326541FF2C91F002E2ACD /* SJNetworkUploadEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkUploadEngine.h; sourceTree = "<group>"; };
+		CB7326551FF2C91F002E2ACD /* SJNetworkCacheInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkCacheInfo.m; sourceTree = "<group>"; };
+		CB7326561FF2C91F002E2ACD /* SJNetworkRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkRequestModel.h; sourceTree = "<group>"; };
+		CB7326571FF2C91F002E2ACD /* SJNetworkRequestEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkRequestEngine.h; sourceTree = "<group>"; };
+		CB7326581FF2C91F002E2ACD /* SJNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkManager.m; sourceTree = "<group>"; };
+		CB7326591FF2C91F002E2ACD /* SJNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkConfig.m; sourceTree = "<group>"; };
+		CB73265A1FF2C91F002E2ACD /* SJNetworkDownloadResumeDataInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkDownloadResumeDataInfo.m; sourceTree = "<group>"; };
+		CB73265B1FF2C91F002E2ACD /* SJNetworkDownloadEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkDownloadEngine.m; sourceTree = "<group>"; };
+		CB73265C1FF2C91F002E2ACD /* SJNetworkCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkCacheManager.m; sourceTree = "<group>"; };
+		CB73265D1FF2C91F002E2ACD /* SJNetworkRequestPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkRequestPool.m; sourceTree = "<group>"; };
+		CB73265E1FF2C91F002E2ACD /* SJNetworkUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkUtils.m; sourceTree = "<group>"; };
+		CB73265F1FF2C91F002E2ACD /* SJNetworkBaseEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkBaseEngine.m; sourceTree = "<group>"; };
+		CB7326601FF2C91F002E2ACD /* SJNetworkUploadEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkUploadEngine.m; sourceTree = "<group>"; };
+		CB7326611FF2C91F002E2ACD /* SJNetworkCacheInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkCacheInfo.h; sourceTree = "<group>"; };
+		CB7326621FF2C91F002E2ACD /* SJNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkManager.h; sourceTree = "<group>"; };
+		CB7326631FF2C91F002E2ACD /* SJNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkConfig.h; sourceTree = "<group>"; };
+		CB7326641FF2C91F002E2ACD /* SJNetworkRequestEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkRequestEngine.m; sourceTree = "<group>"; };
+		CB7326651FF2C91F002E2ACD /* SJNetworkHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkHeader.h; sourceTree = "<group>"; };
+		CB7326661FF2C91F002E2ACD /* SJNetworkRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNetworkRequestModel.m; sourceTree = "<group>"; };
+		CB7326681FF2C91F002E2ACD /* SJNetworkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkProtocol.h; sourceTree = "<group>"; };
+		CB7326691FF2C91F002E2ACD /* SJNetworkBaseEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkBaseEngine.h; sourceTree = "<group>"; };
+		CB73266A1FF2C91F002E2ACD /* SJNetworkUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkUtils.h; sourceTree = "<group>"; };
+		CB73266B1FF2C91F002E2ACD /* SJNetworkRequestPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkRequestPool.h; sourceTree = "<group>"; };
+		CB73266C1FF2C91F002E2ACD /* SJNetworkCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkCacheManager.h; sourceTree = "<group>"; };
+		CB73266D1FF2C91F002E2ACD /* SJNetworkDownloadResumeDataInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkDownloadResumeDataInfo.h; sourceTree = "<group>"; };
+		CB73266E1FF2C91F002E2ACD /* SJNetworkDownloadEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNetworkDownloadEngine.h; sourceTree = "<group>"; };
+		CB73267B1FF2C952002E2ACD /* SJNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJNetwork.h; sourceTree = "<group>"; };
+		CB9B897A1FC7226A00C4522C /* SJNetworkingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJNetworkingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9B897D1FC7226A00C4522C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB9B897E1FC7226A00C4522C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB9B89841FC7226A00C4522C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB9B89861FC7226A00C4522C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB9B89891FC7226A00C4522C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB9B898B1FC7226A00C4522C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9B898C1FC7226A00C4522C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB9B89921FC7226A00C4522C /* SJNetworkingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJNetworkingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9B89961FC7226A00C4522C /* SJNetworkingDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJNetworkingDemoTests.m; sourceTree = "<group>"; };
+		CB9B89981FC7226A00C4522C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9B899D1FC7226A00C4522C /* SJNetworkingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJNetworkingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9B89A11FC7226A00C4522C /* SJNetworkingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJNetworkingDemoUITests.m; sourceTree = "<group>"; };
+		CB9B89A31FC7226A00C4522C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9B89B01FC7234300C4522C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB9B89B11FC7234300C4522C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB9B89B21FC7234300C4522C /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		CB9B89B31FC7234300C4522C /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		CB9B89B41FC7234300C4522C /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		CB9B89B51FC7234300C4522C /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		CB9B89BA1FC7234B00C4522C /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+		CB9B89BB1FC7234B00C4522C /* image_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_3.png; sourceTree = "<group>"; };
+		CB9B89BC1FC7234B00C4522C /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		CB9B89BD1FC7234B00C4522C /* image_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_4.png; sourceTree = "<group>"; };
+		CB9B89BE1FC7234B00C4522C /* image_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_5.png; sourceTree = "<group>"; };
+		EE92C5E63DA273CA29CEB0B8 /* Pods-SJNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SJNetworkingDemo/Pods-SJNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB9B89771FC7226A00C4522C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C612A51EBEC32C107815BAB /* libPods-SJNetworkingDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9B898F1FC7226A00C4522C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9B899A1FC7226A00C4522C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002CAE5ED1B5736ED6EBB63A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A57F5D2046E8373B41EF067 /* libPods-SJNetworkingDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4E61BFA6D1F94AD4264C91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE92C5E63DA273CA29CEB0B8 /* Pods-SJNetworkingDemo.debug.xcconfig */,
+				7DD1551EFC2D5DD53F3B32C6 /* Pods-SJNetworkingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB7326531FF2C91F002E2ACD /* SJNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				CB73267B1FF2C952002E2ACD /* SJNetwork.h */,
+				CB7326541FF2C91F002E2ACD /* SJNetworkUploadEngine.h */,
+				CB7326551FF2C91F002E2ACD /* SJNetworkCacheInfo.m */,
+				CB7326561FF2C91F002E2ACD /* SJNetworkRequestModel.h */,
+				CB7326571FF2C91F002E2ACD /* SJNetworkRequestEngine.h */,
+				CB7326581FF2C91F002E2ACD /* SJNetworkManager.m */,
+				CB7326591FF2C91F002E2ACD /* SJNetworkConfig.m */,
+				CB73265A1FF2C91F002E2ACD /* SJNetworkDownloadResumeDataInfo.m */,
+				CB73265B1FF2C91F002E2ACD /* SJNetworkDownloadEngine.m */,
+				CB73265C1FF2C91F002E2ACD /* SJNetworkCacheManager.m */,
+				CB73265D1FF2C91F002E2ACD /* SJNetworkRequestPool.m */,
+				CB73265E1FF2C91F002E2ACD /* SJNetworkUtils.m */,
+				CB73265F1FF2C91F002E2ACD /* SJNetworkBaseEngine.m */,
+				CB7326601FF2C91F002E2ACD /* SJNetworkUploadEngine.m */,
+				CB7326611FF2C91F002E2ACD /* SJNetworkCacheInfo.h */,
+				CB7326621FF2C91F002E2ACD /* SJNetworkManager.h */,
+				CB7326631FF2C91F002E2ACD /* SJNetworkConfig.h */,
+				CB7326641FF2C91F002E2ACD /* SJNetworkRequestEngine.m */,
+				CB7326651FF2C91F002E2ACD /* SJNetworkHeader.h */,
+				CB7326661FF2C91F002E2ACD /* SJNetworkRequestModel.m */,
+				CB7326681FF2C91F002E2ACD /* SJNetworkProtocol.h */,
+				CB7326691FF2C91F002E2ACD /* SJNetworkBaseEngine.h */,
+				CB73266A1FF2C91F002E2ACD /* SJNetworkUtils.h */,
+				CB73266B1FF2C91F002E2ACD /* SJNetworkRequestPool.h */,
+				CB73266C1FF2C91F002E2ACD /* SJNetworkCacheManager.h */,
+				CB73266D1FF2C91F002E2ACD /* SJNetworkDownloadResumeDataInfo.h */,
+				CB73266E1FF2C91F002E2ACD /* SJNetworkDownloadEngine.h */,
+			);
+			path = SJNetwork;
+			sourceTree = "<group>";
+		};
+		CB9B89711FC7226A00C4522C = {
+			isa = PBXGroup;
+			children = (
+				CB9B897C1FC7226A00C4522C /* SJNetworkingDemo */,
+				CB9B89951FC7226A00C4522C /* SJNetworkingDemoTests */,
+				CB9B89A01FC7226A00C4522C /* SJNetworkingDemoUITests */,
+				CB9B897B1FC7226A00C4522C /* Products */,
+				AE4E61BFA6D1F94AD4264C91 /* Pods */,
+				002CAE5ED1B5736ED6EBB63A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB9B897B1FC7226A00C4522C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B897A1FC7226A00C4522C /* SJNetworkingDemo.app */,
+				CB9B89921FC7226A00C4522C /* SJNetworkingDemoTests.xctest */,
+				CB9B899D1FC7226A00C4522C /* SJNetworkingDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB9B897C1FC7226A00C4522C /* SJNetworkingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B89AF1FC7232B00C4522C /* ViewController */,
+				CB7326531FF2C91F002E2ACD /* SJNetwork */,
+				CB9B89C41FC7235900C4522C /* Other */,
+			);
+			path = SJNetworkingDemo;
+			sourceTree = "<group>";
+		};
+		CB9B89951FC7226A00C4522C /* SJNetworkingDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B89961FC7226A00C4522C /* SJNetworkingDemoTests.m */,
+				CB9B89981FC7226A00C4522C /* Info.plist */,
+			);
+			path = SJNetworkingDemoTests;
+			sourceTree = "<group>";
+		};
+		CB9B89A01FC7226A00C4522C /* SJNetworkingDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B89A11FC7226A00C4522C /* SJNetworkingDemoUITests.m */,
+				CB9B89A31FC7226A00C4522C /* Info.plist */,
+			);
+			path = SJNetworkingDemoUITests;
+			sourceTree = "<group>";
+		};
+		CB9B89AF1FC7232B00C4522C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B89B01FC7234300C4522C /* ViewController.h */,
+				CB9B89B11FC7234300C4522C /* ViewController.m */,
+				CB9B89B51FC7234300C4522C /* UploadViewController.h */,
+				CB9B89B41FC7234300C4522C /* UploadViewController.m */,
+				CB9B89B21FC7234300C4522C /* DownLoadViewController.h */,
+				CB9B89B31FC7234300C4522C /* DownLoadViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CB9B89B91FC7234B00C4522C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B89BC1FC7234B00C4522C /* image_1.jpg */,
+				CB9B89BA1FC7234B00C4522C /* image_2.jpg */,
+				CB9B89BB1FC7234B00C4522C /* image_3.png */,
+				CB9B89BD1FC7234B00C4522C /* image_4.png */,
+				CB9B89BE1FC7234B00C4522C /* image_5.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		CB9B89C41FC7235900C4522C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CB9B897D1FC7226A00C4522C /* AppDelegate.h */,
+				CB9B897E1FC7226A00C4522C /* AppDelegate.m */,
+				CB9B89831FC7226A00C4522C /* Main.storyboard */,
+				CB9B89861FC7226A00C4522C /* Assets.xcassets */,
+				CB9B89B91FC7234B00C4522C /* images */,
+				CB9B89881FC7226A00C4522C /* LaunchScreen.storyboard */,
+				CB9B898B1FC7226A00C4522C /* Info.plist */,
+				CB9B898C1FC7226A00C4522C /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB9B89791FC7226A00C4522C /* SJNetworkingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9B89A61FC7226A00C4522C /* Build configuration list for PBXNativeTarget "SJNetworkingDemo" */;
+			buildPhases = (
+				178DF2658A89583847970ACA /* [CP] Check Pods Manifest.lock */,
+				CB9B89761FC7226A00C4522C /* Sources */,
+				CB9B89771FC7226A00C4522C /* Frameworks */,
+				CB9B89781FC7226A00C4522C /* Resources */,
+				5DF0DB54A7F3ADFCF7C47535 /* [CP] Embed Pods Frameworks */,
+				27382A79029207E59A319B25 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SJNetworkingDemo;
+			productName = SJNetworkingDemo;
+			productReference = CB9B897A1FC7226A00C4522C /* SJNetworkingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB9B89911FC7226A00C4522C /* SJNetworkingDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9B89A91FC7226A00C4522C /* Build configuration list for PBXNativeTarget "SJNetworkingDemoTests" */;
+			buildPhases = (
+				CB9B898E1FC7226A00C4522C /* Sources */,
+				CB9B898F1FC7226A00C4522C /* Frameworks */,
+				CB9B89901FC7226A00C4522C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9B89941FC7226A00C4522C /* PBXTargetDependency */,
+			);
+			name = SJNetworkingDemoTests;
+			productName = SJNetworkingDemoTests;
+			productReference = CB9B89921FC7226A00C4522C /* SJNetworkingDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB9B899C1FC7226A00C4522C /* SJNetworkingDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9B89AC1FC7226A00C4522C /* Build configuration list for PBXNativeTarget "SJNetworkingDemoUITests" */;
+			buildPhases = (
+				CB9B89991FC7226A00C4522C /* Sources */,
+				CB9B899A1FC7226A00C4522C /* Frameworks */,
+				CB9B899B1FC7226A00C4522C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9B899F1FC7226A00C4522C /* PBXTargetDependency */,
+			);
+			name = SJNetworkingDemoUITests;
+			productName = SJNetworkingDemoUITests;
+			productReference = CB9B899D1FC7226A00C4522C /* SJNetworkingDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB9B89721FC7226A00C4522C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Shijie;
+				TargetAttributes = {
+					CB9B89791FC7226A00C4522C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					CB9B89911FC7226A00C4522C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB9B89791FC7226A00C4522C;
+					};
+					CB9B899C1FC7226A00C4522C = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB9B89791FC7226A00C4522C;
+					};
+				};
+			};
+			buildConfigurationList = CB9B89751FC7226A00C4522C /* Build configuration list for PBXProject "SJNetworkingDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB9B89711FC7226A00C4522C;
+			productRefGroup = CB9B897B1FC7226A00C4522C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB9B89791FC7226A00C4522C /* SJNetworkingDemo */,
+				CB9B89911FC7226A00C4522C /* SJNetworkingDemoTests */,
+				CB9B899C1FC7226A00C4522C /* SJNetworkingDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB9B89781FC7226A00C4522C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9B898A1FC7226A00C4522C /* LaunchScreen.storyboard in Resources */,
+				CB9B89C21FC7234B00C4522C /* image_4.png in Resources */,
+				CB9B89871FC7226A00C4522C /* Assets.xcassets in Resources */,
+				CB9B89BF1FC7234B00C4522C /* image_2.jpg in Resources */,
+				CB9B89C01FC7234B00C4522C /* image_3.png in Resources */,
+				CB9B89C31FC7234B00C4522C /* image_5.png in Resources */,
+				CB9B89851FC7226A00C4522C /* Main.storyboard in Resources */,
+				CB9B89C11FC7234B00C4522C /* image_1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9B89901FC7226A00C4522C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9B899B1FC7226A00C4522C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		178DF2658A89583847970ACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SJNetworkingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27382A79029207E59A319B25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJNetworkingDemo/Pods-SJNetworkingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DF0DB54A7F3ADFCF7C47535 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SJNetworkingDemo/Pods-SJNetworkingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB9B89761FC7226A00C4522C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB73267A1FF2C91F002E2ACD /* SJNetworkRequestModel.m in Sources */,
+				CB9B89B61FC7234300C4522C /* ViewController.m in Sources */,
+				CB7326761FF2C91F002E2ACD /* SJNetworkUtils.m in Sources */,
+				CB7326711FF2C91F002E2ACD /* SJNetworkConfig.m in Sources */,
+				CB9B898D1FC7226A00C4522C /* main.m in Sources */,
+				CB9B89B71FC7234300C4522C /* DownLoadViewController.m in Sources */,
+				CB9B89B81FC7234300C4522C /* UploadViewController.m in Sources */,
+				CB7326771FF2C91F002E2ACD /* SJNetworkBaseEngine.m in Sources */,
+				CB7326781FF2C91F002E2ACD /* SJNetworkUploadEngine.m in Sources */,
+				CB73266F1FF2C91F002E2ACD /* SJNetworkCacheInfo.m in Sources */,
+				CB7326791FF2C91F002E2ACD /* SJNetworkRequestEngine.m in Sources */,
+				CB9B897F1FC7226A00C4522C /* AppDelegate.m in Sources */,
+				CB7326721FF2C91F002E2ACD /* SJNetworkDownloadResumeDataInfo.m in Sources */,
+				CB7326701FF2C91F002E2ACD /* SJNetworkManager.m in Sources */,
+				CB7326731FF2C91F002E2ACD /* SJNetworkDownloadEngine.m in Sources */,
+				CB7326741FF2C91F002E2ACD /* SJNetworkCacheManager.m in Sources */,
+				CB7326751FF2C91F002E2ACD /* SJNetworkRequestPool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9B898E1FC7226A00C4522C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9B89971FC7226A00C4522C /* SJNetworkingDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9B89991FC7226A00C4522C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9B89A21FC7226A00C4522C /* SJNetworkingDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB9B89941FC7226A00C4522C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB9B89791FC7226A00C4522C /* SJNetworkingDemo */;
+			targetProxy = CB9B89931FC7226A00C4522C /* PBXContainerItemProxy */;
+		};
+		CB9B899F1FC7226A00C4522C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB9B89791FC7226A00C4522C /* SJNetworkingDemo */;
+			targetProxy = CB9B899E1FC7226A00C4522C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB9B89831FC7226A00C4522C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB9B89841FC7226A00C4522C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB9B89881FC7226A00C4522C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB9B89891FC7226A00C4522C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB9B89A41FC7226A00C4522C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB9B89A51FC7226A00C4522C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB9B89A71FC7226A00C4522C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE92C5E63DA273CA29CEB0B8 /* Pods-SJNetworkingDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V6R56268H;
+				INFOPLIST_FILE = "$(SRCROOT)/SJNetworkingDemo/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJNetworkingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB9B89A81FC7226A00C4522C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD1551EFC2D5DD53F3B32C6 /* Pods-SJNetworkingDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V6R56268H;
+				INFOPLIST_FILE = "$(SRCROOT)/SJNetworkingDemo/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJNetworkingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB9B89AA1FC7226A00C4522C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJNetworkingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJNetworkingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJNetworkingDemo.app/SJNetworkingDemo";
+			};
+			name = Debug;
+		};
+		CB9B89AB1FC7226A00C4522C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJNetworkingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJNetworkingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SJNetworkingDemo.app/SJNetworkingDemo";
+			};
+			name = Release;
+		};
+		CB9B89AD1FC7226A00C4522C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJNetworkingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJNetworkingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SJNetworkingDemo;
+			};
+			name = Debug;
+		};
+		CB9B89AE1FC7226A00C4522C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SJNetworkingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shijie.SJNetworkingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SJNetworkingDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB9B89751FC7226A00C4522C /* Build configuration list for PBXProject "SJNetworkingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9B89A41FC7226A00C4522C /* Debug */,
+				CB9B89A51FC7226A00C4522C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9B89A61FC7226A00C4522C /* Build configuration list for PBXNativeTarget "SJNetworkingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9B89A71FC7226A00C4522C /* Debug */,
+				CB9B89A81FC7226A00C4522C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9B89A91FC7226A00C4522C /* Build configuration list for PBXNativeTarget "SJNetworkingDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9B89AA1FC7226A00C4522C /* Debug */,
+				CB9B89AB1FC7226A00C4522C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9B89AC1FC7226A00C4522C /* Build configuration list for PBXNativeTarget "SJNetworkingDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9B89AD1FC7226A00C4522C /* Debug */,
+				CB9B89AE1FC7226A00C4522C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB9B89721FC7226A00C4522C /* Project object */;
+}
