@@ -27,10 +27,10 @@ SJNetwork provides a high level network request API  based on AFNetworking and i
   - background downloading supporting or not
 - **Default parameters**:default parameters will be added on request body
 - **Custom header**: configuring custom request header(key-value)
-- **Base url** : server url of network requests
+- **Base url configuration**  : server url of network requests
 - **Request management**:canceling one or more than one current network requests; checking current requests' information
 - **Cache operation**: writing, loading or clearing one or more than one cache of network requests ; calculating cache size
-- **Debug mode**: for convenience of debugging
+- **Debug mode switch**: for convenience of debugging
 
 
 
@@ -49,7 +49,7 @@ SJNetwork provides a high level network request API  based on AFNetworking and i
 
 
 
-Using Pod:
+**Using Pod**:
 
 ``pod 'SJNetwork'``
 
@@ -57,7 +57,7 @@ Using Pod:
 
 or 
 
-Moving ``SJNetwork``folder into your project.
+**Moving** ``SJNetwork``**folder into your project**.
 
 
 
@@ -84,7 +84,7 @@ Moving ``SJNetwork``folder into your project.
 #### Default parameters
 
 ```objective-c
-[SJNetworkConfig sharedConfig].defailtParameters = @{@"app_version":[SJNetworkUtils appVersionStr],
+[SJNetworkConfig sharedConfig].defailtParameters = @{@"app_version":[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"],
                                                         @"platform":@"iOS"};
 ```
 
