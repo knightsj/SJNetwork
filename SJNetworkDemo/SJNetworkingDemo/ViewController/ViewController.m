@@ -164,17 +164,17 @@
 - (IBAction)sendRequest_1_request_2_not_load_cache:(UIButton *)sender {
     
     
-    //send request 0
-    [[SJNetworkManager sharedManager] sendGetRequest:_url0
-                                          parameters:_params_0
-                                             success:^(id responseObject) {
-                                                 
-                                                 NSLog(@"request succeed:%@",responseObject);
-                                                 
-                                             } failure:^(NSURLSessionTask *task, NSError *error, NSInteger statusCode) {
-                                                 
-                                                 NSLog(@"request failed:%@",error);
-                                             }];
+//    //send request 0
+//    [[SJNetworkManager sharedManager] sendGetRequest:_url0
+//                                          parameters:_params_0
+//                                             success:^(id responseObject) {
+//                                                 
+//                                                 NSLog(@"request succeed:%@",responseObject);
+//                                                 
+//                                             } failure:^(NSURLSessionTask *task, NSError *error, NSInteger statusCode) {
+//                                                 
+//                                                 NSLog(@"request failed:%@",error);
+//                                             }];
     
     //send request 1
     [[SJNetworkManager sharedManager] sendGetRequest:_url1
