@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/build-passing-brightgreen.svg)
 ![](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
 ![](https://img.shields.io/badge/language-Objective--C-30A3FC.svg)
-![](https://img.shields.io/badge/pod-1.0.1-orange.svg)
+![](https://img.shields.io/badge/pod-v1.2.0-orange.svg)
 [![](https://img.shields.io/badge/blog-JueJin-007FFF.svg)](https://juejin.im/post/5a3f4ae8f265da4322416967)
 [![](https://img.shields.io/badge/weibo-%40J__Knight__-ff0000.svg)](https://weibo.com/1929625262/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1)
 [![](https://img.shields.io/badge/License-MIT-ff69b4.svg)](https://github.com/knightsj/SJNetwork/blob/master/LICENSE)
@@ -43,28 +43,21 @@ Document for Chinese-convenient reader:[中文文档](https://juejin.im/post/5a3
 ## Usage
 
 
-
-### Installation
-
-
-
-#### Step1:
-
-
-
-**Using Cocoapods**:
+**Method1:**  using Cocoapods:
 
 ``pod 'SJNetwork'``
 
+then
+
+```objective-c
+#import <SJNetwork/SJNetwork.h>
+```
 
 
-or 
 
-**Moving** ``SJNetwork``**folder into your project**.
+**Method2**: moving ``SJNetwork``folder into your project.
 
-
-
-#### Step2：
+then
 
 ```objective-c
 #import "SJNetwork.h"
